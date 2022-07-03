@@ -1,12 +1,12 @@
 {
-  "name": "zrc-mimic-donation",
+  "name": "zrc-perform-submit",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon index.js",
-    "dep": "NODE_ENV=deployment nodemon index.js",
+    "dev": "NODE_ENV=development nodemon ./server/bin/www",
+    "dep": "NODE_ENV=deployment nodemon ./server/bin/www",
     "start": "npm run dep",
     "test": "text.js"
   },
@@ -31,7 +31,11 @@
     "gerador-validador-cpf": "^5.0.2",
     "puppeteer-extra-plugin-stealth": "^2.7.8",
     "unirest": "^0.6.0",
-    "user-agents": "^1.0.1059"
+    "user-agents": "^1.0.1059",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1"
   },
   "engines": {
     "node": "16.3.0",
